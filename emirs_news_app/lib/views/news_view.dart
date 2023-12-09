@@ -89,7 +89,7 @@ class _NewsViewState extends State<NewsView> {
                         Text(
                           vm.viewModel.articles[index].title ?? '',
                           style: const TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.w700),
+                              fontSize: 16, fontWeight: FontWeight.w800),
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.end,
