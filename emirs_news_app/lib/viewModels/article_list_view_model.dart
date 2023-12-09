@@ -9,13 +9,13 @@ class ArticleListViewModel extends ChangeNotifier {
   Status status = Status.initial;
 
   ArticleListViewModel() {
-    getNews();
+    getNews('general');
   }
 
-  Future<void> getNews() async {
+  Future<void> getNews(String category) async {
     status = Status.loading;
     notifyListeners();
-    viewModel.articles = await NewsService().fetchNews(viewModel.category);
+    viewModel.articles = await NewsService().fetchNews(category);
     status = Status.loaded;
     notifyListeners();
   }
