@@ -33,7 +33,7 @@ class Articles {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
-    if (this.source != null) {
+    if (source != null) {
       data['source'] = source!.toJson();
     }
     data['author'] = author;

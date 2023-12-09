@@ -3,7 +3,7 @@ import 'package:emirs_news_app/views/news_view.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-final theme = ThemeData(useMaterial3: true, primarySwatch: Colors.blueGrey);
+final theme = ThemeData(useMaterial3: true, primarySwatch: Colors.blue);
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -11,7 +11,7 @@ void main() {
     title: 'News',
     home: ChangeNotifierProvider(
       create: (context) => ArticleListViewModel(),
-      child: NewsView(),
+      child: const NewsView(),
     ),
   ));
 }
